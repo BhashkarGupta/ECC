@@ -1,0 +1,32 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "ecc",
+  "displayName": "ECC (Everything Coding Companion)",
+  "version": "2.2.3",
+  "description": "Production-ready coding system for Antigravity: 71 specialized subagents, 314 workflow skills, rules, lifecycle hooks, and operator workflows.",
+  "category": "Developer Tools",
+  "author": {
+    "name": "Affaan Mustafa",
+    "url": "https://ecc.tools"
+  },
+  "homepage": "https://ecc.tools",
+  "repository": "https://github.com/affaan-m/ECC",
+  "license": "MIT",
+  "keywords": [
+    "antigravity",
+    "skills",
+    "agents",
+    "subagents",
+    "tdd",
+    "code-review",
+    "security",
+    "hooks",
+    "refactoring"
+  ],
+  "suggestedPrompts": [
+    "Use @planner to plan this feature",
+    "Use @code-reviewer to review recent changes",
+    "Use the tdd-workflow skill to write tests first",
+    "Run security-review on this codebase"
+  ]
+}

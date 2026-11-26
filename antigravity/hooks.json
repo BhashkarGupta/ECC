@@ -1,0 +1,36 @@
+{
+  "ecc-lifecycle": {
+    "enabled": true,
+    "SessionStart": [
+      {
+        "type": "command",
+        "command": "node hook-bridge.js SessionStart",
+        "timeout": 15
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "run_command",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node hook-bridge.js PreToolUse",
+            "timeout": 15
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node hook-bridge.js PostToolUse",
+            "timeout": 15
+          }
+        ]
+      }
+    ]
+  }
+}
